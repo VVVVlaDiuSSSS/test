@@ -1,0 +1,25 @@
+/* FONTS*/
+h1{
+    font-family: Helvetica, sans-serif; /*  без засічками 
+    /*  із засічками Helvetica i sans-serif
+    одне  й те саме*/
+    font-family: serif; /*  із засічками 
+    font-family: monospace; /*  букви однакової довжини */
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* TEXT*/
+h1{
+    text-decoration: none;
+    text-align: right;
+    /*text-transform;*/
+        text-transform: uppercase;/*всі букви ВЕЛИКІ*/
+        text-transform: lowercase;/*всі букви маленькі */
+        text-transform:capitalize;/*Кожне слово з великої букви */
+        text-shadow: 2px 2px 4px pink;
+        letter-spacing: 4px;
+        word-spacing: 5px;
+        white-space: nowrap;/* в один рядок текст(рідко)*/
+    }

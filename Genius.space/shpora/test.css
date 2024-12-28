@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+/*
+.box{
+    display: inline-block;
+    box-sizing:border-box ;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+    border: 6px solid darkred;
+    /*border: 5px solid hotpink;
+    margin-left: 10px
+    padding: 16px 42px;;*/
+/*/*}
+.box:not(:last-child){
+    background-color: blanchedalmond;
+}
+.box:nth-child(3),
+.box:nth-child(4){
+    background-color: blanchedalmond;
+}
+.box:last-child {
+    background-color: blanchedalmond;
+}
+/* odd непарний*//*
+.box:nth-child(odd){
+    background-color: aqua;
+}/*
+/* even кожен парний*//*
+.box:nth-child(even) {
+    background-color: aqua;
+}
+/* тут для закономірностей, прогресій*/
+/*.box:nth-child(n+3) {
+    background-color: aqua;
+}*//*
+.container{
+    padding: 30px;
+    border: 1px solid black;
+}*/
+.parent{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 40px;
+    border: 1px solid black;
+}
+.item{
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+/* */
+.item.red{
+    width: 350px;
+    height: 350px;
+    font-size: 25px;
+    background-color: red;
+    transform: translateX(-20px);/* перше значення по х інше по у*/
+     /* transition-property: background-color; */
+    /* transition-duration:1s ; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in; */
+    /* transition-delay: 0.5s; */
+    
+    transition:background-color 1s, color 1s; 
+    opacity: 1;
+
+    
+    
+    
+    /*overflow: auto; щоб вмістити текст в контейнер всередині, щоб він не вилізав за нього*/
+}
+.item.red:hover{
+    opacity: 0;
+    background-color:pink;
+    color: black;
+   
+}
+.item.green{
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+    background-color: rgb(129, 255, 11);
+    /* transform: rotate(90deg);  */
+    /* у градусах*/
+    /* transform: rotate(0.5turn) у поворотах */
+    animation-name: spin;
+    animation-duration:1.5s;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: linear;
+    animation: spin 1s infinite linear;
+}   
+
+@keyframes spin {
+    0% {
+        transform: rotate(0);
+        background-color: green;
+    }
+    100% {
+        transform: rotate(360deg);
+        background-color: green;
+    }
+}
+/* @keyframes spin {
+    from{
+        transform: rotate(0);
+    }
+    
+    to{
+        transform: rotate(360deg)
+    }
+} */
+
+.item.blue{
+    font-size: 25px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(29, 255, 229);
+    transform: scale(0.5) /*елемент пропорційно збільшився*/
+}
+.item.orange {
+    font-size: 25px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 106, 0);
+    transform: skew(20deg, 20deg); /* викривлення елементів*/
+}
+/*
+.section-title{
+    background-color: rgb(175, 116, 116);
+    position: sticky;
+    top: 0;
+}

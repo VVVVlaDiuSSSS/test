@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test table</title>
+</head>
+<body>
+    <table>
+        <caption> Заголовок </caption> <!-- Тільки в таблицях використовується для назви-->
+
+        <thead><!--шапка таблиці -->
+            <tr> <!-- те що ми пишемо вряд-->
+                <th>No.</th>
+                <th>Full name</th>
+                <th>Position</th>
+                <th>Salary</th>
+            </tr>
+        </thead> 
+        <tbody> <!-- тіло таблиці-->
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <td rowspan="4">1000$</td>
+                <!-- rowspan= "(число)" кількість рядків на
+                які розтянути і тоді в інших рядкі які ми
+                об'єднуємо, прибираємо дані щоб залишилось
+                лише однезначення)-->
+            </tr>
+                <tr>
+                <td>2</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <!-- <td>1000$</td>-->
+
+                </tr>
+            <tr>
+                <td>3</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+                <!-- <td>1000$</td>-->
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bill Gates</td>
+                <td>Founder Microsoft</td>
+            <!-- <td>1000$</td>-->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4000$</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
